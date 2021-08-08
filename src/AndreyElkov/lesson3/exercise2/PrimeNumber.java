@@ -10,13 +10,13 @@ public class PrimeNumber {
             boolean simple = false;
 
             for (int i = 2; i * i <= j; i++) {
-                simple = (j % i == 0);
+                simple = j % i == 0;
                 if (simple) {
                     break;
                 }
             }
             if (!simple) {
-                System.out.println(+ j );
+                System.out.println(j);
             }
         }
     }
